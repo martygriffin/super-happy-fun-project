@@ -1,0 +1,104 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/global_background_color"
+    android:orientation="vertical"
+    tools:context=".MainMenu">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_layout_height"
+        android:gravity="center"
+        android:keepScreenOn="true"
+        android:text="@string/home_title"
+        android:textColor="@color/screen_title_color"
+        android:textSize="@dimen/title_size"
+        android:textStyle="bold" />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:weightSum="4">
+
+        <LinearLayout
+            android:id="@+id/generate_list_button"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_centerInParent="true"
+
+            android:layout_weight="1"
+            android:background="@drawable/default_button_style"
+            android:clickable="true"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/button_margin"
+            android:layout_marginTop="@dimen/button_margin"
+            android:layout_marginRight="@dimen/button_margin"
+            android:layout_marginBottom="@dimen/menu_button_bottom_margin">
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/button_image_height"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/button_image_margin"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/ic_actionbar_ethernet" />
+
+            <TextView
+                android:id="@+id/ethernet_button_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/button_label_left_margin"
+                android:scaleType="fitCenter"
+                android:text="@string/ethernet_label"
+                android:textColor="@color/button_text_color"
+                android:textSize="@dimen/button_text_size" />
+        </LinearLayout>
+
+<!--        <LinearLayout
+            android:id="@+id/spacer"
+            android:layout_width="fill_parent"
+            android:layout_height="10dp"
+            android:clickable="true"
+            android:orientation="vertical">
+
+        </LinearLayout>-->
+
+        <LinearLayout
+            android:id="@+id/wifi_button"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="@dimen/button_margin"
+
+            android:layout_weight="1"
+            android:background="@drawable/default_button_style"
+            android:clickable="true"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/wifiImage"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/button_image_height"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/button_image_margin"
+                android:src="@mipmap/ic_actionbar_wifi_4" />
+
+            <TextView
+                android:id="@+id/wifi_button_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/button_label_left_margin"
+                android:text="@string/wifi_label"
+                android:textColor="@color/button_text_color"
+                android:textSize="@dimen/button_text_size" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>

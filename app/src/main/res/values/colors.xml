@@ -1,0 +1,8 @@
+<resources>
+    <color name="black_overlay">#FFF</color>
+    <color name="screen_title_color">#FFF</color>
+    <color name="global_background_color">#000</color>
+    <color name="button_text_color">#7698BE</color>
+    <color name="list_separator">#808080</color>
+
+</resources>

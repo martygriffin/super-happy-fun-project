@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="title_size">24sp</dimen>
+    <dimen name="button_margin">15sp</dimen>
+    <dimen name="button_text_size">32sp</dimen>
+    <dimen name="button_image_margin">24sp</dimen>
+    <dimen name="button_label_left_margin">20sp</dimen>
+    <dimen name="button_image_height">40sp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16sp</dimen>
+    <dimen name="activity_vertical_margin">16sp</dimen>
+    <dimen name="default_list_item_margin">15sp</dimen>
+    <dimen name="title_layout_height">72dp</dimen>
+    <dimen name="menu_button_bottom_margin">30dp</dimen>
+
+</resources>
